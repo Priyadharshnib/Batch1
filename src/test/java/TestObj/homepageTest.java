@@ -12,7 +12,7 @@ public class homepageTest {
 	
 	
 		homepage hp;
-		Basepage bp;
+		Basepage bp1;
 			
 	public homepageTest() {
 		hp= new homepage();
@@ -32,6 +32,7 @@ public class homepageTest {
 	public void verifynavigation() {
 		
 		hp.ClickWomen();
+                hp.ClickWomen();
 		String title=hp.getTitlte();
 		Assert.assertTrue(title.contains("Women"), "Failed to getWomenTag");
 	
